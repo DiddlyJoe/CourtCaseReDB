@@ -1,0 +1,670 @@
+<!-- RIGHT BLOCK: Supreme Legal Analysis - In re D.B. (Carrd Embed) -->
+<div id="db-right" aria-label="Professional Legal Analysis">
+<style>
+/* Modern Professional Design System */
+#db-right {
+  --primary-bg: #ffffff;
+  --secondary-bg: #f7f9fc;
+  --accent-bg: #eef2f7;
+  --text-primary: #1a1f2e;
+  --text-secondary: #4a5568;
+  --text-muted: #718096;
+  --border-color: #e2e8f0;
+  --accent-color: #2563eb;
+  --accent-hover: #1d4ed8;
+  --success-color: #10b981;
+  --warning-color: #f59e0b;
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.1);
+  --shadow-lg: 0 10px 25px rgba(0,0,0,0.12);
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', system-ui, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  #db-right {
+    --primary-bg: #0f1419;
+    --secondary-bg: #1a1f2e;
+    --accent-bg: #252d3d;
+    --text-primary: #f7fafc;
+    --text-secondary: #cbd5e0;
+    --text-muted: #a0aec0;
+    --border-color: #2d3748;
+    --accent-color: #60a5fa;
+    --accent-hover: #3b82f6;
+  }
+}
+
+/* Main Container */
+#db-right .panel {
+  background: var(--primary-bg);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+  position: relative;
+}
+
+/* Enhanced Header */
+#db-right .panel-header {
+  background: linear-gradient(135deg, var(--secondary-bg), var(--accent-bg));
+  border-bottom: 2px solid var(--border-color);
+  padding: 20px 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+#db-right .panel-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent-color), var(--accent-hover));
+}
+
+#db-right .panel-title {
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+#db-right .panel-subtitle {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-top: 6px;
+  font-weight: 400;
+}
+
+/* Body Content */
+#db-right .panel-body {
+  height: clamp(500px, 75vh, 800px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 28px;
+  color: var(--text-primary);
+  line-height: 1.7;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Custom Scrollbar */
+#db-right .panel-body::-webkit-scrollbar {
+  width: 10px;
+}
+
+#db-right .panel-body::-webkit-scrollbar-track {
+  background: var(--secondary-bg);
+  border-radius: 10px;
+}
+
+#db-right .panel-body::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 10px;
+  border: 2px solid var(--secondary-bg);
+}
+
+#db-right .panel-body::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}
+
+/* Typography Enhancements */
+#db-right h1 {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 1.5rem 0 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 3px solid var(--accent-color);
+}
+
+#db-right h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 2rem 0 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--border-color);
+  position: relative;
+}
+
+#db-right h2::before {
+  content: '§';
+  position: absolute;
+  left: -20px;
+  color: var(--accent-color);
+  font-weight: 300;
+  opacity: 0.5;
+}
+
+#db-right h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 1.5rem 0 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Paragraphs & Lists */
+#db-right p {
+  margin: 0.75rem 0;
+  color: var(--text-primary);
+}
+
+#db-right ul, #db-right ol {
+  margin: 1rem 0 1rem 1.5rem;
+  color: var(--text-primary);
+}
+
+#db-right li {
+  margin: 0.5rem 0;
+  position: relative;
+}
+
+#db-right ul li::marker {
+  color: var(--accent-color);
+}
+
+/* Enhanced Links */
+#db-right a {
+  color: var(--accent-color);
+  text-decoration: none;
+  position: relative;
+  transition: color 0.2s ease;
+  font-weight: 500;
+}
+
+#db-right a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--accent-hover);
+  transition: width 0.3s ease;
+}
+
+#db-right a:hover {
+  color: var(--accent-hover);
+}
+
+#db-right a:hover::after {
+  width: 100%;
+}
+
+/* Professional Blockquotes */
+#db-right blockquote {
+  background: linear-gradient(135deg, var(--secondary-bg), var(--accent-bg));
+  border-left: 4px solid var(--accent-color);
+  padding: 1rem 1.25rem;
+  border-radius: var(--radius-md);
+  margin: 1.5rem 0;
+  box-shadow: var(--shadow-sm);
+  position: relative;
+  font-style: italic;
+}
+
+#db-right blockquote::before {
+  content: '"';
+  position: absolute;
+  top: -10px;
+  left: 15px;
+  font-size: 3rem;
+  color: var(--accent-color);
+  opacity: 0.2;
+}
+
+/* Enhanced Tables */
+#db-right table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  margin: 1.5rem 0;
+}
+
+#db-right th, #db-right td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+}
+
+#db-right th {
+  background: var(--secondary-bg);
+  font-weight: 600;
+  color: var(--text-primary);
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+#db-right tr:last-child td {
+  border-bottom: none;
+}
+
+#db-right tr:hover {
+  background: var(--accent-bg);
+  transition: background 0.2s ease;
+}
+
+/* Dividers */
+#db-right hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--border-color), transparent);
+  margin: 2rem 0;
+}
+
+/* Strong Emphasis */
+#db-right strong {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+#db-right em {
+  font-style: italic;
+  color: var(--text-secondary);
+}
+
+/* Special Badge Styling */
+#db-right .badge {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: var(--radius-sm);
+  background: var(--accent-color);
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #db-right .panel-body {
+    padding: 20px;
+  }
+
+  #db-right h1 {
+    font-size: 1.5rem;
+  }
+
+  #db-right h2 {
+    font-size: 1.25rem;
+  }
+
+  #db-right h2::before {
+    display: none;
+  }
+}
+
+/* Smooth Animations */
+#db-right * {
+  transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+}
+
+/* Section Separators */
+#db-right .section-divider {
+  margin: 3rem 0;
+  text-align: center;
+  position: relative;
+}
+
+#db-right .section-divider::before {
+  content: '⚖';
+  font-size: 1.5rem;
+  color: var(--accent-color);
+  opacity: 0.3;
+}
+</style>
+
+<section class="panel">
+  <div class="panel-header">
+    <h3 class="panel-title">⚖ Court-Ready HTML Analysis</h3>
+    <div class="panel-subtitle">California Court of Appeal · Sixth District · In re D.B.</div>
+  </div>
+
+  <div class="panel-body">
+    <h1>Supreme Legal Analyst Mandate — <em>In re D.B.</em></h1>
+
+    <p><strong>California Court of Appeal, Sixth Appellate District · Case No. H051945 · Filed May 28, 2025</strong></p>
+
+    <blockquote>
+      <p><strong>Slip Citation:</strong> <em>In re D.B.</em>, No. H051945 (Cal. Ct. App., Sixth Dist., May 28, 2025) (certified for publication).</p>
+    </blockquote>
+
+    <div class="section-divider"></div>
+
+    <h2>1) Case Identification & Metadata</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Field</th>
+          <th>Details</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Full Case Name</strong></td>
+          <td><em>In re D.B., a Person Coming Under the Juvenile Court Law.</em> Santa Clara County Department of Family and Children's Services v. K.B.; D.B., Appellant. (PDF p. 1)</td>
+        </tr>
+        <tr>
+          <td><strong>Docket/Appellate No.</strong></td>
+          <td>H051945 (PDF p. 1)</td>
+        </tr>
+        <tr>
+          <td><strong>Court / District</strong></td>
+          <td>California Court of Appeal, Sixth Appellate District (PDF p. 1)</td>
+        </tr>
+        <tr>
+          <td><strong>Lower Court Case No.</strong></td>
+          <td>Santa Clara County Super. Ct. No. 23JD027540 (PDF p. 1)</td>
+        </tr>
+        <tr>
+          <td><strong>Decision/Filed Date</strong></td>
+          <td>May 28, 2025 (PDF p. 1)</td>
+        </tr>
+        <tr>
+          <td><strong>Publication Status</strong></td>
+          <td>Certified for publication (PDF p. 1)</td>
+        </tr>
+        <tr>
+          <td><strong>Panel</strong></td>
+          <td>Greenwood, P.J.; Danner, J.; Bromberg, J. (opinion by Greenwood, P.J.) (PDF p. 83)</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="section-divider"></div>
+
+    <h2>2) Legal Precedents & Holdings Analysis</h2>
+
+    <p><strong>Questions Presented.</strong> Whether a juvenile dependency court has authority under <strong>Welf. & Inst. Code § 213.5, subd. (a)</strong> to issue a restraining order <strong>against a dependent child</strong>; if so, what standard and considerations govern issuance, including the child's <strong>best interest</strong>; whether any constitutional reunification interests are violated; and whether the appeal is <strong>moot</strong> given the order's expiration during appeal. (PDF pp. 2–3, 30–31, 33)</p>
+
+    <p><strong>Holdings & Disposition.</strong></p>
+    <ul>
+      <li><strong>Authority.</strong> Section <strong>213.5(a)</strong> vests the juvenile dependency court with authority to issue restraining orders <strong>against a dependent minor</strong>. (PDF pp. 3, 30)</li>
+      <li><strong>Best Interest Requirement.</strong> When exercising that authority, the court <strong>must consider the child's best interest</strong>. (PDF pp. 3, 30, 64, 76)</li>
+      <li><strong>Caution / Rarity.</strong> Such orders against dependents <strong>should be rare</strong>; courts must be alert to the <strong>severity of consequences</strong> for violations. (PDF pp. 73–75)</li>
+      <li><strong>Routing.</strong> Proceedings initiated by or against a dependent <strong>must be heard in the juvenile court</strong> with jurisdiction, under <strong>Code Civ. Proc. § 374.5</strong> and <strong>Cal. Rules of Court, rule 5.632</strong> (effective Jan. 1, 2025). (PDF pp. 56, 58)</li>
+      <li><strong>Modification Path.</strong> The dependency court may later <strong>modify or terminate</strong> under <strong>§ 213.5(d)</strong>; see also <strong>Cal. Rules of Court, rule 5.630(j)(1)</strong>. (PDF pp. 28, 69)</li>
+      <li><strong>Mootness Exception.</strong> Although the order expired and D.B. turned 18, the court heard the appeal under the public‑interest / evading‑review doctrine and potential collateral consequences. <em>In re Emily L.</em> (2021) 73 Cal. App. 5th 1, 13; <em>City of Monterey v. Carrnshimba</em> (2013) 215 Cal. App. 4th 1068, 1079; <em>In re D.P.</em> (2023) 14 Cal. 5th 266, 282–287. (PDF pp. 32–33)</li>
+      <li><strong>Disposition.</strong> <strong>Affirmed.</strong> (PDF pp. 4, 82)</li>
+    </ul>
+
+    <p><strong>Standards of Review.</strong></p>
+    <ul>
+      <li><strong>Statutory Interpretation:</strong> <strong>De novo</strong> review. <em>In re Damian L.</em> (2023) 90 Cal. App. 5th 357, 372; <em>In re Anthony Q.</em> (2016) 5 Cal. App. 5th 336, 344; <em>Sierra Club v. Superior Court</em> (2013) 57 Cal. 4th 157, 165–166. (PDF pp. 31, 36–37)</li>
+      <li><strong>Factual Findings:</strong> <strong>Substantial evidence</strong>; indulge all reasonable inferences to support the juvenile court's decision. <em>In re L.W.</em> (2020) 44 Cal. App. 5th 44, 51; <em>In re Carlos H.</em> (2016) 5 Cal. App. 5th 861, 866. (PDF pp. 34–35)</li>
+      <li><strong>Issuance Decision:</strong> <strong>Abuse of discretion</strong> (arbitrary/capricious or based on improper legal principles). <em>In re A.P.</em> (2024) 103 Cal. App. 5th 1137, 1143. (PDF p. 35)</li>
+    </ul>
+
+    <p><strong>Statutory Framework — Welf. & Inst. Code § 213.5(a) — key language</strong> <em>(quoted verbatim from the opinion)</em> (PDF pp. 43–44):</p>
+    <blockquote>
+      <p>"A court may also issue an ex parte order enjoining a <strong>person</strong> from molesting, attacking, striking, stalking, threatening, sexually assaulting, battering, harassing, telephoning, including, but not limited to, making annoying telephone calls as described in Section 653m of the Penal Code, destroying the personal property, contacting, either directly or indirectly, by mail or otherwise, coming within a specified distance of, or disturbing the peace of any <strong>parent, legal guardian, or current caretaker</strong> of the child, regardless of whether the child resides with that parent, legal guardian, or current caretaker, upon application in the manner provided by Section 527 of the Code of Civil Procedure or, if related to domestic violence, in the manner provided by Section 6300 of the Family Code."</p>
+    </blockquote>
+
+    <ul>
+      <li>The court treats <strong>"person"</strong> as inclusive of a <strong>dependent child</strong>. (See Cal. Rules of Court, rule 5.502(5) [defines "a child" as "a person under the age of 18 years"]; see also § 300). (PDF pp. 20, 45–46)</li>
+      <li><strong>§ 213.5(d) — modification/termination path.</strong> The dependency court may <strong>terminate or modify</strong> the restraining order upon request if facts support such an outcome; this confers flexibility as circumstances change. (<strong>§ 213.5(d)</strong>; <strong>Cal. Rules of Court, rule 5.630(j)(1)</strong>.) (PDF p. 69)</li>
+      <li><strong>§ 213.5(i) — violation consequences</strong> <em>(verbatim short clause)</em>: "Willful and knowing violations of juvenile restraining orders <strong>shall be a misdemeanor punishable</strong> under the Penal Code." (PDF p. 74)</li>
+    </ul>
+
+    <p><strong>Routing — CCP § 374.5 and Rule 5.632.</strong></p>
+    <ul>
+      <li><strong>CCP § 374.5.</strong> Proceedings initiated by or brought against a minor for specified injunctions/orders (e.g., <strong>CCP §§ 527.6, 527.8</strong>; <strong>Fam. Code §§ 6200 et seq., 7710, 7720</strong>) must be <strong>heard in the juvenile court</strong> if the minor has been adjudged a dependent/ward; the Court requested supplemental briefing on this statute. (PDF pp. 55–57)</li>
+      <li><strong>Rule 5.632 (effective Jan. 1, 2025).</strong> Adopted to <strong>enforce CCP § 374.5</strong>, ensuring such matters are routed to juvenile court; the Advisory Committee noted the statute existed since 1998 but may have gone "unnoticed" by juvenile practitioners. (PDF pp. 58–59)</li>
+    </ul>
+
+    <p><strong>Burden of Proof Clarifier.</strong> The opinion does <strong>not</strong> specify a distinct evidentiary burden beyond the usual dependency standards. It applies <strong>substantial‑evidence</strong> review to factual findings and <strong>abuse‑of‑discretion</strong> to issuance. Section 213.5(a) incorporates the "manner provided by" <strong>CCP § 527</strong> and <strong>Fam. Code § 6300</strong> for application/notice <strong>procedures</strong>, but it does <strong>not</strong> wholesale import separate civil/family burdens into dependency proceedings. (PDF pp. 34–35, 41)</p>
+
+    <p><strong>Court's Analysis — Authority under § 213.5(a).</strong> Text and context of § 213.5(a) authorize restraining orders to protect a <strong>parent</strong> from a <strong>"person,"</strong> which the dependency rules define to include a <strong>minor</strong>; routing statutes and new Rule 5.632 reinforce the dependency‑court forum. The court rejects any reading requiring separate civil filings only to route back under <strong>CCP § 374.5</strong> as contrary to efficiency and legislative intent. (PDF pp. 30, 45, 51, 55, 59–60)</p>
+
+    <p><strong>Court's Analysis — Best Interest Requirement.</strong> Dependency law (<strong>§ 202; § 300.2</strong>) centers the <strong>child's best interest</strong>; the court holds the dependency court <strong>must consider</strong> the child's best interest when evaluating a restraining order against a dependent. The opinion declines a categorical "never in the child's best interest" rule, recognizing the variety of family contexts. <em>In re Joshua A.</em> (2015) 239 Cal. App. 4th 208, 218. (PDF pp. 3, 61–65)</p>
+
+    <p><strong>Court's Analysis — Constitutional Reunification Interest.</strong> Assuming a reunification interest, no violation occurred: the dependency court had already <strong>terminated</strong> reunification services for Mother <strong>at Mother's request and with D.B.'s agreement</strong>; the order did not improperly infringe any constitutional interest. <em>In re Marilyn H.</em> (1993) 5 Cal. 4th 295, 306; see also <em>In re Jayden M.</em> (2023) 93 Cal. App. 5th 1261, 1271 (bypass discretion). (PDF pp. 71, 81–82)</p>
+
+    <p><strong>Court's Analysis — Mootness Exception.</strong> Despite D.B. turning 18 and the order's expiration, the appeal was heard under the <strong>public‑interest / likely‑to‑evade‑review</strong> doctrine and potential collateral consequences. <em>In re Emily L.</em> (2021) 73 Cal. App. 5th 1, 13; <em>City of Monterey v. Carrnshimba</em> (2013) 215 Cal. App. 4th 1068, 1079; <em>In re D.P.</em> (2023) 14 Cal. 5th 266, 282–287. (PDF pp. 32–33)</p>
+
+    <div class="section-divider"></div>
+
+    <h2>3) Cross‑Citations & Case Law Network</h2>
+
+    <ul>
+      <li><strong>Statutory Interpretation:</strong> <em>In re Damian L.</em> (2023) 90 Cal. App. 5th 357, 372 (PDF pp. 31, 36); <em>In re Anthony Q.</em> (2016) 5 Cal. App. 5th 336, 344 (PDF p. 32); <em>Sierra Club v. Superior Court</em> (2013) 57 Cal. 4th 157, 165–166 (PDF p. 37).</li>
+      <li><strong>Appellate Posture (Factual Findings):</strong> <em>In re L.W.</em> (2020) 44 Cal. App. 5th 44, 51 (PDF p. 34); <em>In re Carlos H.</em> (2016) 5 Cal. App. 5th 861, 866 (PDF pp. 34–35).</li>
+      <li><strong>Appellate Posture (Issuance Decision):</strong> <em>In re A.P.</em> (2024) 103 Cal. App. 5th 1137, 1143 (PDF p. 35).</li>
+      <li><strong>Best Interest:</strong> <em>In re Joshua A.</em> (2015) 239 Cal. App. 4th 208, 218 (PDF p. 63).</li>
+      <li><strong>Routing / Rules Force:</strong> <em>Sara M. v. Superior Court</em> (2005) 36 Cal. 4th 998, 1011 (PDF p. 63).</li>
+      <li><strong>Constitutional Interests:</strong> <em>In re Marilyn H.</em> (1993) 5 Cal. 4th 295, 306 (PDF pp. 71, 81); <strong>Bypass:</strong> <em>In re Jayden M.</em> (2023) 93 Cal. App. 5th 1261, 1271 (PDF p. 71).</li>
+      <li><strong>Implied Findings:</strong> <em>In re Aurora P.</em> (2015) 241 Cal. App. 4th 1142, 1166 (PDF p. 79).</li>
+      <li><strong>Mootness & Exception:</strong> <em>In re Emily L.</em> (2021) 73 Cal. App. 5th 1, 13 (PDF p. 32); <em>City of Monterey v. Carrnshimba</em> (2013) 215 Cal. App. 4th 1068, 1079 (PDF p. 33); <em>In re D.P.</em> (2023) 14 Cal. 5th 266, 282–287 (PDF p. 33).</li>
+      <li><strong>Statutory Cross‑reference / Drafting Error:</strong> <em>In re Lilianna C.</em> (2024) 99 Cal. App. 5th 638, 641 (PDF p. 42); <em>In re H.D.</em> (2024) 99 Cal. App. 5th 814, 819 (PDF p. 42).</li>
+      <li><strong>Legislative History of § 213.5:</strong> <em>In re E.F.</em> (2021) 11 Cal. 5th 320, 329 (PDF pp. 53–54).</li>
+      <li><strong>Juvenile Court Law History:</strong> <em>In re Nolan W.</em> (2009) 45 Cal.4th 1217, 1239 (conc. & dis. opn. of Baxter, J.) (PDF p. 38); Nunn & Cleary, <em>From the Mexican California Frontier to Arnold‑Kennick: Highlights in the Evolution of the California Juvenile Court, 1850–1961</em> (2004) vol. 5, J. Center for Fam., Child. & Cts. 3, 25 (PDF p. 38).</li>
+      <li><strong>Focus Shift after Reunification Termination:</strong> <em>In re Fernando M.</em> (2006) 138 Cal. App. 4th 529, 534 (PDF p. 71).</li>
+      <li><strong>Foster Care‑to‑Prison Pipeline (Note):</strong> Note, <em>From Removal to Incarceration: How the Modern Child Welfare System and Its Unintended Consequences Catalyzed the Foster Care‑to‑Prison Pipeline</em> (2020) 20 U. Md. L.J. Race, Religion, Gender & Class 289, 294–297 (PDF p. 75).</li>
+    </ul>
+
+    <div class="section-divider"></div>
+
+    <h2>4) Procedural History & Timeline</h2>
+
+    <ul>
+      <li><strong>Family History & Early Referrals.</strong> Commencing around D.B.'s first birthday, the Department received multiple referrals expressing concern for D.B.'s well‑being in Mother's care, involving allegations of physical and emotional abuse and neglect, sometimes concluded as unfounded or inconclusive, or leading to voluntary services. (PDF pp. 4–8) D.B. alleged Mother constantly threatened, demeaned, and assaulted her, leading to self‑harm and marijuana use. (PDF pp. 6–7) At age 15, D.B. gave birth to J.G.; Mother sought guardianship, alleging D.B.'s mental health and substance abuse issues, but the Department found the neglect allegation unfounded, and no guardianship was established. (PDF pp. 7–8)</li>
+
+      <li><strong>Escalating Conflicts & Dependency Initiation.</strong> Competing referrals involved Mother and D.B. accusing each other of drug use and physical altercations. (PDF pp. 8–9) In June 2023, Mother alleged D.B. repeatedly punched her in the face and shoulder, leading to D.B.'s arrest and detention in juvenile hall. (PDF pp. 9–10) The district attorney did not file charges against D.B. (PDF p. 10) Mother refused D.B.'s return due to D.B.'s assaultive behavior and fear for her life, and D.B. also refused to return, citing Mother's volatile behavior. (PDF pp. 10–11) Father was not suitable for placement at that time due to his recent release from jail for assault and battery. (PDF p. 11) In the absence of suitable caretakers, the Department initiated dependency proceedings with Mother's agreement, placing D.B. (almost 17) in protective custody. (PDF p. 11)</li>
+
+      <li><strong>Dependency Proceedings & Placement Instability.</strong> In June 2023, the Department filed the juvenile dependency petition for D.B. under section 300, subdivision (g). (PDF p. 12) At the initial detention hearing, D.B. stated that she would not speak with Mother or visit her. (PDF pp. 12–13) The court assumed jurisdiction under section 300, subdivision (g), and declared D.B. a dependent. (PDF p. 14) D.B. was placed in a short‑term residential therapeutic program (STRTP) but was later removed for aggressive and violent behavior toward staff and peers. (PDF pp. 13–14) In August 2023, Mother requested termination of reunification services, citing a long history of aggressive behavior and physical violence; the court granted the request with D.B.'s agreement. (PDF pp. 14–15)</li>
+
+      <li><strong>Escalating Threats & Restraining Order Request.</strong> D.B. frequently absconded from placements, often staying with friends and her boyfriend. (PDF pp. 15–16) Despite the termination of reunification efforts, D.B. continually reached out to Mother with threats and messages, including threatening to kill Mother, burn down her house, and harm her siblings; police involvement ensued. (PDF pp. 16–18) In late November 2023, D.B. sent a barrage of threatening text messages to Mother, calling her over 700 times in one day and threatening violence. (PDF pp. 18–19) Mother filed for a restraining order on December 4, 2023, under section 213.5, alleging harassment and threats. (PDF p. 19)</li>
+
+      <li><strong>Restraining Order Issuance.</strong> On December 5, 2023, the juvenile court issued a temporary restraining order against D.B., ordering her not to contact Mother or come within 100 yards. (PDF pp. 20–21) At the December 26, 2023 hearing, after testimony from Mother, her boyfriend, and D.B., the court issued a one‑year restraining order, finding Mother's testimony credible and expressing concern for Mother's safety. (PDF pp. 21–26) The court explicitly acknowledged concerns about the potential consequences for D.B. but found Mother needed protection from D.B.'s threats and harassment. (PDF pp. 25–26)</li>
+
+      <li><strong>Appeal & Procedural Posture.</strong> D.B. timely appealed the restraining order on January 2, 2024. (PDF p. 27) The order expired on December 26, 2024, and D.B. turned 18 in July 2024. (PDF pp. 27, 32) The appellate court requested supplemental briefing on mootness and the applicability of Code of Civil Procedure section 374.5. (PDF pp. 27–28, 55) Despite mootness concerns, the court exercised discretion to decide the appeal due to public interest and the likelihood of the issue evading review. (PDF pp. 32–33)</li>
+    </ul>
+
+    <div class="section-divider"></div>
+
+    <h2>5) Analytical Framework & Legal Reasoning</h2>
+
+    <h3>A. Statutory Authority Analysis</h3>
+
+    <p><strong>Plain Language Interpretation.</strong> The court begins with the statutory text: section 213.5(a) authorizes restraining orders against any "person" to protect parents, legal guardians, or current caretakers. The term "person" is not limited by age and includes minors under California law. (PDF pp. 43–46)</p>
+
+    <p><strong>Contextual Support.</strong> The court examines related provisions:</p>
+    <ul>
+      <li>California Rules of Court, rule 5.502(5) defines "child" as "a person under the age of 18 years" (PDF p. 45)</li>
+      <li>Section 300 uses "child" and "person" interchangeably (PDF p. 46)</li>
+      <li>Legislative history shows section 213.5 was enacted to give dependency courts the same protective order authority as civil courts (PDF pp. 53–54)</li>
+    </ul>
+
+    <p><strong>Routing Statutes Reinforce Authority.</strong> Code of Civil Procedure section 374.5 and new Rule 5.632 require restraining order proceedings involving dependent minors to be heard in juvenile court, confirming the juvenile court's jurisdiction over such matters. (PDF pp. 55–60)</p>
+
+    <h3>B. Best Interest Requirement</h3>
+
+    <p><strong>Statutory Mandate.</strong> Sections 202 and 300.2 establish that all dependency proceedings must serve the child's best interest and safety. (PDF pp. 61–62)</p>
+
+    <p><strong>Application to Restraining Orders.</strong> The court holds that when issuing restraining orders against dependent children, courts must consider the child's best interest alongside protection needs. The court rejects a categorical rule that such orders can never serve a child's best interest, recognizing the complexity of individual cases. (PDF pp. 63–65)</p>
+
+    <p><strong>Factors for Consideration:</strong></p>
+    <ul>
+      <li>Severity and immediacy of the threat (PDF p. 76)</li>
+      <li>Alternative protective measures available (PDF p. 77)</li>
+      <li>Potential consequences for the child, including criminal liability (PDF pp. 73–75)</li>
+      <li>The child's mental health and developmental needs (PDF p. 77)</li>
+      <li>Impact on placement stability and services (PDF p. 77)</li>
+    </ul>
+
+    <h3>C. Constitutional Analysis</h3>
+
+    <p><strong>Reunification Interest.</strong> The court assumes without deciding that a constitutional interest in family reunification exists. However, no violation occurred here because:</p>
+    <ul>
+      <li>Mother had already requested termination of reunification services (PDF p. 71)</li>
+      <li>D.B. agreed to the termination (PDF p. 71)</li>
+      <li>The dependency focus had shifted from reunification to permanency planning (PDF p. 71)</li>
+    </ul>
+
+    <p><strong>Due Process Considerations.</strong> The court notes that D.B. received notice, opportunity to be heard, and was represented by counsel at the restraining order hearing, satisfying due process requirements. (PDF pp. 21–24)</p>
+
+    <div class="section-divider"></div>
+
+    <h2>6) Factual Record & Evidence</h2>
+
+    <h3>Key Evidence Supporting the Order</h3>
+
+    <ul>
+      <li><strong>Text Message Threats:</strong> D.B. sent numerous threatening messages to Mother, including threats to kill her, burn down her house, and harm siblings (PDF pp. 16–18)</li>
+      <li><strong>Excessive Contact:</strong> D.B. called Mother over 700 times in a single day (PDF p. 19)</li>
+      <li><strong>Physical Violence History:</strong> Multiple documented incidents of D.B. physically assaulting Mother, including punching her in June 2023 (PDF pp. 9–10)</li>
+      <li><strong>Continued Harassment:</strong> Despite no‑contact requests, D.B. persistently contacted Mother through various means (PDF pp. 16–19)</li>
+      <li><strong>Credibility Finding:</strong> The juvenile court found Mother's testimony credible and D.B.'s denials not credible (PDF pp. 25–26)</li>
+    </ul>
+
+    <h3>D.B.'s Position</h3>
+
+    <ul>
+      <li>Denied making threats or excessive calls (PDF p. 24)</li>
+      <li>Claimed Mother fabricated evidence (PDF p. 24)</li>
+      <li>Asserted Mother was the aggressor in their relationship (PDF p. 24)</li>
+      <li>Argued the restraining order violated her constitutional rights (PDF p. 70)</li>
+    </ul>
+
+    <div class="section-divider"></div>
+
+    <h2>7) Court's Application to Facts</h2>
+
+    <p><strong>Substantial Evidence Review.</strong> The appellate court found substantial evidence supported the juvenile court's factual findings:</p>
+    <ul>
+      <li>Mother's testimony about threats and harassment (PDF pp. 22–23)</li>
+      <li>Corroborating testimony from Mother's boyfriend (PDF p. 23)</li>
+      <li>Documentary evidence of text messages and call logs (PDF pp. 18–19)</li>
+      <li>Police reports documenting threats (PDF pp. 17–18)</li>
+    </ul>
+
+    <p><strong>Best Interest Analysis.</strong> The court found the juvenile court implicitly considered D.B.'s best interest:</p>
+    <ul>
+      <li>The court expressed concern about consequences for D.B. (PDF p. 25)</li>
+      <li>The court weighed D.B.'s needs against Mother's safety (PDF pp. 25–26)</li>
+      <li>The order included only necessary restrictions (PDF p. 21)</li>
+      <li>The court made the order modifiable upon changed circumstances (PDF p. 28)</li>
+    </ul>
+
+    <p><strong>Abuse of Discretion Standard.</strong> The appellate court found no abuse of discretion in issuing the order given the serious threats, pattern of harassment, and credibility determinations. (PDF pp. 78–80)</p>
+
+    <div class="section-divider"></div>
+
+    <h2>8) Policy Considerations & Cautionary Guidance</h2>
+
+    <h3>Systemic Concerns</h3>
+
+    <ul>
+      <li><strong>Foster Care‑to‑Prison Pipeline:</strong> The court acknowledges research showing dependent children face increased risk of criminal justice involvement (PDF p. 75)</li>
+      <li><strong>Criminalization of Childhood Behavior:</strong> Risk of treating family conflicts as criminal matters (PDF p. 74)</li>
+      <li><strong>Disproportionate Consequences:</strong> Violation of restraining orders carries criminal penalties that may be particularly harsh for dependent youth (PDF pp. 73–74)</li>
+    </ul>
+
+    <h3>Court's Cautionary Guidance</h3>
+
+    <blockquote>
+      <p>"We caution that restraining orders against dependent children should be rare. Before issuing such an order, juvenile courts should carefully consider whether the order is in the child's best interest and whether less restrictive alternatives would adequately address safety concerns." (PDF pp. 73–74)</p>
+    </blockquote>
+
+    <p><strong>Recommended Considerations:</strong></p>
+    <ul>
+      <li>Explore therapeutic interventions and family counseling first (PDF p. 77)</li>
+      <li>Consider safety plans and supervised visitation alternatives (PDF p. 77)</li>
+      <li>Assess the child's capacity to understand and comply with orders (PDF p. 77)</li>
+      <li>Evaluate mental health needs and trauma history (PDF p. 77)</li>
+      <li>Consider placement changes or increased supervision as alternatives (PDF p. 77)</li>
+    </ul>
+
+    <div class="section-divider"></div>
+
+    <h2>9) Concurring & Dissenting Opinions</h2>
+
+    <p><strong>None.</strong> The opinion was unanimous with all three justices concurring in the judgment and reasoning. (PDF p. 83)</p>
+
+    <div class="section-divider"></div>
+
+    <h2>10) Disposition & Remand Instructions</h2>
+
+    <p><strong>Final Disposition:</strong> AFFIRMED. The juvenile court's December 26, 2023 restraining order is affirmed. (PDF pp. 4, 82)</p>
+
+    <p><strong>No Remand:</strong> The court affirmed the order without remand, as it had already expired during the pendency of the appeal. (PDF p. 82)</p>
+
+    <p><strong>Future Guidance:</strong> The opinion provides prospective guidance for juvenile courts considering similar restraining orders, emphasizing the need for best interest analysis and caution in issuing such orders. (PDF pp. 73–77)</p>
+
+    <div class="section-divider"></div>
+
+    <h2>11) Practice Implications & Takeaways</h2>
+
+    <h3>For Dependency Practitioners</h3>
+
+    <ul>
+      <li><strong>Venue:</strong> All restraining order proceedings involving dependent children must be filed in juvenile court per CCP § 374.5 and Rule 5.632 (PDF pp. 55–60)</li>
+      <li><strong>Standard:</strong> Must demonstrate both statutory grounds AND that the order serves the child's best interest (PDF pp. 30, 64)</li>
+      <li><strong>Evidence:</strong> Document specific threats, harassment patterns, and safety concerns thoroughly (PDF pp. 76–77)</li>
+      <li><strong>Alternatives:</strong> Be prepared to address why less restrictive measures are insufficient (PDF p. 77)</li>
+    </ul>
+
+    <h3>For Juvenile Courts</h3>
+
+    <ul>
+      <li><strong>Express Findings:</strong> Make explicit best interest findings on the record (PDF pp. 78–79)</li>
+      <li><strong>Consider Consequences:</strong> Acknowledge potential criminal liability and developmental impacts (PDF pp. 73–75)</li>
+      <li><strong>Modification:</strong> Include clear modification procedures and review dates (PDF p. 69)</li>
+      <li><strong>Narrow Tailoring:</strong> Impose only restrictions necessary for safety (PDF p. 77)</li>
+    </ul>
+
+    <h3>For Appellate Counsel</h3>
+
+    <ul>
+      <li><strong>Preservation:</strong> Object to lack of best interest findings at trial court level (PDF p. 79)</li>
+      <li><strong>Mootness:</strong> Consider public interest exception for expired orders affecting minors (PDF pp. 32–33)</li>
+      <li><strong>Constitutional Arguments:</strong> Frame reunification interests carefully given case‑specific facts (PDF pp. 70–71)</li>
+      <li><strong>Policy Arguments:</strong> Cite foster‑to‑prison pipeline research and systemic concerns (PDF p. 75)</li>
+    </ul>
+
+    <div class="section-divider"></div>
+
+    <h2>12) Broader Legal Significance</h2>
+
+    <p>This case represents the <strong>first published California appellate decision</strong> directly addressing whether juvenile dependency courts can issue restraining orders against dependent children under section 213.5(a). Its significance includes:</p>
+
+    <ul>
+      <li><strong>Clarifies Jurisdiction:</strong> Definitively establishes juvenile court authority while mandating best interest analysis</li>
+      <li><strong>Procedural Framework:</strong> Integrates CCP § 374.5 and new Rule 5.632 into dependency practice</li>
+      <li><strong>Balancing Test:</strong> Creates framework for weighing child welfare against safety concerns</li>
+      <li><strong>Systemic Reform:</strong> Acknowledges broader issues of criminalizing dependent youth behavior</li>
+      <li><strong>Future Litigation:</strong> Sets stage for potential Supreme Court review of constitutional issues</li>
+    </ul>
+
+    <blockquote>
+      <p><em>"While we affirm the order here, we emphasize that such orders should be exceptional, not routine, and courts must remain vigilant to ensure that the dependency system's protective purpose is not subverted into a punitive one."</em> (Paraphrased from PDF pp. 73–74)</p>
+    </blockquote>
+
+    <div class="section-divider"></div>
+
+    <p style="text-align: center; margin-top: 3rem; padding-top: 2rem; border-top: 2px solid var(--border-color); color: var(--text-muted); font-size: 0.875rem;">
+      <strong>End of Analysis</strong><br>
+      <em>In re D.B.</em>, No. H051945 (Cal. Ct. App., 6th Dist., May 28, 2025)<br>
+      ⚖ Certified for Publication ⚖
+    </p>
+  </div>
+</section>
+</div>
+<!-- END RIGHT BLOCK -->
+
